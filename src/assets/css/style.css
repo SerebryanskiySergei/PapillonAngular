@@ -8970,7 +8970,8 @@ footer .widget_getintuch i {
 }
 /*  map footer */
 .map-footer .footer-top{
-	padding:0;
+    padding:0;
+    padding-top: 50px;
 }
 
 

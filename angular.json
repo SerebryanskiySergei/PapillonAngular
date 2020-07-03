@@ -22,6 +22,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/.htaccess",
+              "src/sitemap.xml",
               {
                 "glob": "**/*",
                 "input": "src/assets/plugins/revolution/v5.4.3/assets",
@@ -29,26 +31,25 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/plugins/owl-carousel/owl.carousel.css",
-              "src/assets/plugins/flaticon/flaticon.css",
+              "src/assets/plugins/bootstrap/css/bootstrap.min.css",
               "src/assets/plugins/fontawesome/css/font-awesome.min.css",
+              "src/assets/plugins/flaticon/flaticon.css",
+              "src/assets/plugins/owl-carousel/owl.carousel.css",
               "src/assets/plugins/bootstrap-select/bootstrap-select.min.css",
               "src/assets/plugins/magnific-popup/magnific-popup.css",
               "src/assets/plugins/animate/animate.css",
               "src/assets/plugins/scroll/scrollbar.css",
+              "src/assets/css/style.css",
+              "src/assets/css/skin.css",
+              "src/assets/css/template.css",
               "src/assets/plugins/revolution/v5.4.3/css/settings.css",
               "src/assets/plugins/revolution/v5.4.3/css/navigation.css",
-              "src/assets/css/style.css",
-              "src/assets/css/template.css",
-              "src/assets/css/skin.css",
               "src/styles.css"
             ],
             "scripts": [
               "src/assets/js/jquery.min.js",
-              "src/assets/plugins/bootstrap/js/bootstrap.min.js",
-              "src/assets/plugins/owl-carousel/owl.carousel.js",
               "src/assets/plugins/wow/wow.js",
+              "src/assets/plugins/bootstrap/js/bootstrap.min.js",
               "src/assets/plugins/bootstrap-select/bootstrap-select.min.js",
               "src/assets/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js",
               "src/assets/plugins/magnific-popup/magnific-popup.js",
@@ -57,6 +58,7 @@
               "src/assets/plugins/imagesloaded/imagesloaded.js",
               "src/assets/plugins/masonry/masonry-3.1.4.js",
               "src/assets/plugins/masonry/masonry.filter.js",
+              "src/assets/plugins/owl-carousel/owl.carousel.js",
               "src/assets/plugins/paroller/skrollr.min.js",
               "src/assets/js/custom.js",
               "src/assets/js/dz.carousel.js",
@@ -64,7 +66,6 @@
               "src/assets/plugins/particles/particles.js",
               "src/assets/plugins/revolution/v5.4.3/js/jquery.themepunch.tools.min.js",
               "src/assets/plugins/revolution/v5.4.3/js/jquery.themepunch.revolution.min.js",
-              "src/assets/js/rev.slider.js",
               "src/assets/plugins/revolution/v5.4.3/js/extensions/revolution.extension.actions.min.js",
               "src/assets/plugins/revolution/v5.4.3/js/extensions/revolution.extension.carousel.min.js",
               "src/assets/plugins/revolution/v5.4.3/js/extensions/revolution.extension.kenburn.min.js",
@@ -72,7 +73,8 @@
               "src/assets/plugins/revolution/v5.4.3/js/extensions/revolution.extension.migration.min.js",
               "src/assets/plugins/revolution/v5.4.3/js/extensions/revolution.extension.parallax.min.js",
               "src/assets/plugins/revolution/v5.4.3/js/extensions/revolution.extension.video.min.js",
-              "src/assets/plugins/revolution/v5.4.3/js/extensions/revolution.extension.slideanims.min.js"
+              "src/assets/plugins/revolution/v5.4.3/js/extensions/revolution.extension.slideanims.min.js",
+              "src/assets/js/rev.slider.js"
             ]
           },
           "configurations": {
@@ -168,5 +170,8 @@
       }
     }
   },
-  "defaultProject": "Site"
+  "defaultProject": "Site",
+  "cli": {
+    "analytics": "24555ce7-0ddf-4915-978a-f7442fc53ada"
+  }
 }

@@ -7,7 +7,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { OfferComponent } from './offer/offer.component';
 import { AuditoryComponent } from './auditory/auditory.component';
-import { MasterComponent } from './master/master.component';
 import { OfficeComponent } from './office/office.component';
 import { UseCasesComponent } from './use-cases/use-cases.component';
 import { ContactsComponent } from './contacts/contacts.component';
@@ -28,7 +27,6 @@ import { TechnicsComponent } from './technics/technics.component';
     FooterComponent,
     OfferComponent,
     AuditoryComponent,
-    MasterComponent,
     OfficeComponent,
     UseCasesComponent,
     ContactsComponent,

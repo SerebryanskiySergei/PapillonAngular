@@ -3,8 +3,8 @@
     <div class="section-full content-inner spa-service">
         <div class="container">
             <div class="section-content row">
-                <div class="spa-service-carousel mfp-gallery gallery owl-btn-center-lr owl-btn-spa-lr owl-spa-btn">
-                    <div class="item">
+                <owl-carousel-o [options]="customOptions" class="spa-service-carousel mfp-gallery gallery owl-btn-center-lr owl-btn-spa-lr owl-spa-btn">
+                    <ng-template carouselSlide>
                         <div class="spa-service-box">
                             <div class="icon-bx-wraper center">
                                 <div class="icon-xl text-primary m-b10"> <a href="#" class="icon-cell text-primary"><i class="flaticon-relax-1"></i></a> </div>
@@ -14,8 +14,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
+                    </ng-template>  
+                    <ng-template carouselSlide>
                         <div class="spa-service-box">
                             <div class="icon-bx-wraper center">
                                 <div class="icon-xl text-primary m-b10"> <a href="#" class="icon-cell text-primary"><i class="flaticon-female-hairs"></i></a> </div>
@@ -25,8 +25,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
+                    </ng-template>  
+                    <ng-template carouselSlide>
                         <div class="spa-service-box">
                             <div class="icon-bx-wraper center">
                                 <div class="icon-xl text-primary m-b10"> <a href="#" class="icon-cell text-primary"><i class="flaticon-massage"></i></a> </div>
@@ -36,8 +36,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </ng-template>  
+                </owl-carousel-o>
             </div>
         </div>
     </div>

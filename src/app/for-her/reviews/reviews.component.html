@@ -6,8 +6,8 @@
                     <h4 style="font-size: 32px">Слова наших клиентов</h4>
                 </div>
                 <div class="section-content m-b30">
-                    <div class="testimonial-three">
-                        <div class="item">
+                    <owl-carousel-o [options]="customOptions" class="testimonial-three">
+                        <ng-template carouselSlide>
                             <div class="testimonial-3 testimonial-bg">
                                 <div class="quote-left"></div>
                                 <div class="testimonial-text">
@@ -16,10 +16,10 @@
                                         У меня довольно чувствительная кожа, но раздражение проходит уже через пять минут!!!<br>
                                         Спасибо мастеру Лизе</p>
                                 </div>
-                                <div class="testimonial-detail"> <strong class="testimonial-name">Даша</strong> <span class="testimonial-position">Студентка</span> </div>
+                                <div class="testimonial-detail"> <strong class="testimonial-name">Даша</strong> <span class="testimonial-position"> Студентка</span> </div>
                             </div>
-                        </div>
-                        <div class="item">
+                        </ng-template>  
+                        <ng-template carouselSlide>
                             <div class="testimonial-3 testimonial-bg">
                                 <div class="quote-left"></div>
                                 <div class="testimonial-text">
@@ -30,10 +30,10 @@
                                         После нескольких сеансов у меня практически полностью прошло врастание!<br>
                                         Очень довольна! Рекомендую всем салон Papillon!</p>
                                 </div>
-                                <div class="testimonial-detail"> <strong class="testimonial-name">Женя</strong> <span class="testimonial-position">Модель</span> </div>
+                                <div class="testimonial-detail"> <strong class="testimonial-name">Женя</strong><span class="testimonial-position"> Модель</span> </div>
                             </div>
-                        </div>
-                        <div class="item">
+                        </ng-template>  
+                        <ng-template carouselSlide>
                             <div class="testimonial-3 testimonial-bg">
                                 <div class="quote-left"></div>
                                 <div class="testimonial-text">
@@ -43,10 +43,10 @@
                                         Через месяц пойду еще
                                     </p>
                                 </div>
-                                <div class="testimonial-detail"> <strong class="testimonial-name">Сергей</strong> <span class="testimonial-position">Программист</span> </div>
+                                <div class="testimonial-detail"> <strong class="testimonial-name">Сергей</strong> <span class="testimonial-position"> Программист</span> </div>
                             </div>
-                        </div>
-                    </div>
+                        </ng-template>
+                     </owl-carousel-o>
                 </div>
                 <div class="sort-title text-white clearfix text-center">
                     <a data-toggle="modal" data-target="#myModal" class="site-button radius-xl m-lr5">Оставить отзыв</a>

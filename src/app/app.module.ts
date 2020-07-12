@@ -27,7 +27,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { StatsComponent } from './for-her/stats/stats.component';
 import { FormsModule }   from '@angular/forms';
-
+import { NgxTextEditorModule } from 'ngx-text-editor';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -60,7 +61,9 @@ import { FormsModule }   from '@angular/forms';
     BrowserAnimationsModule,
     CarouselModule,
     ScrollToModule.forRoot(),
-    FormsModule
+    FormsModule,
+    NgxTextEditorModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

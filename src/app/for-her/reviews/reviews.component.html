@@ -11,7 +11,7 @@
                         <ng-template carouselSlide *ngFor="let person_review of reviews">
                             <div class="testimonial-3 testimonial-bg">
                                 <div class="quote-left"></div>
-                                <div class="testimonial-text">
+                                <div class="testimonial-text text-with-newlines">
                                     <p>{{person_review.text}}</p>
                                 </div>
                                 <div class="testimonial-detail"><strong class="testimonial-name">{{person_review.name}}</strong><span class="testimonial-position p-l5">{{person_review.job}}</span> </div>
@@ -46,7 +46,7 @@
               </div>
             <div class="form-group">
               <label for="text" class="control-label">Текст отзыва:</label>
-              <!-- <ngx-text-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="newReview.text" name="text"></ngx-text-editor> -->
+              <ngx-text-editor [placeholder]="'Введите текст вашего отзыва здесь...'" [spellcheck]="true" [(ngModel)]="newReview.text" name="text"></ngx-text-editor>
             </div>
           </form>
         </div>

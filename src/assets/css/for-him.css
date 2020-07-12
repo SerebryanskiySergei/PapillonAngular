@@ -4583,30 +4583,6 @@ div.at4-arrow.at-up {
     height: auto;
     z-index: -100;
 }
-/* contact form */
-.contact-form .modal-dialog{
-	width:auto;
-	max-width:450px;
-}
-.modal-content {
-    background-color: #333333;
-	border-radius: 0;
-}
-.modal-content .form-control {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-	height: 44px;
-    padding: 0 20px;
-}
-.modal-content .input-group:hover .form-control, 
-.modal-content .input-group:focus .form-control, 
-.modal-content .input-group:focus .input-group-addon,
-.modal-content .input-group:hover .input-group-addon{
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0;
-}
 
 .close-btn {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;

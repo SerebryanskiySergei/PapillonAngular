@@ -25,6 +25,8 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { StatsComponent } from './for-her/stats/stats.component';
+import { FormsModule }   from '@angular/forms';
 
 
 
@@ -48,7 +50,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     AdvantagesComponent,
     TechnicsComponent,
     ForHerComponent,
-    ForHimComponent
+    ForHimComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     NgxSpinnerModule,
     BrowserAnimationsModule,
     CarouselModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

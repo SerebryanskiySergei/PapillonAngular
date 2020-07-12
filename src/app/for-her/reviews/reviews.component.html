@@ -14,54 +14,46 @@
                                 <div class="testimonial-text">
                                     <p>{{person_review.text}}</p>
                                 </div>
-                                <div class="testimonial-detail"><strong class="testimonial-name">{{person_review.name}}</strong><span class="testimonial-position p-l5">{{person_review.proff}}</span> </div>
+                                <div class="testimonial-detail"><strong class="testimonial-name">{{person_review.name}}</strong><span class="testimonial-position p-l5">{{person_review.job}}</span> </div>
                             </div>
                         </ng-template>   
                      </owl-carousel-o>
                 </div>
                 <div class="sort-title text-white clearfix text-center">
-                    <a data-toggle="modal" data-target="#myModal" class="site-button radius-xl m-lr5">Оставить отзыв</a>
+                    <button data-toggle="modal" data-target="#reviewModal" class="site-button radius-xl m-lr5">Оставить отзыв</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Modal -->
-<div class="modal fade contact-form black" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <form method="post" class="p-b20" action="/">
-                    @csrf
-                    <div class="row">
-                        <button name="Resat" type="reset" value="Reset" data-dismiss="modal" class="close-btn">&times; </button>
-                        <div class="col-md-12 text-center text-white">
-                            <h2 class="text-white"></h2>
-                            <p>Дайте нам знать, что вы думаете о нашем салоне!</p>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="m-b15">
-                                <input id="review_author" placeholder="Ваше имя" name="author" type="text" required class="form-control radius-xl">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="m-b15">
-                                <input id="review_author_job" placeholder="Ваша профессия" name="author_job" type="text" class="form-control radius-xl">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="m-b15">
-                                <textarea class="form-control radius-xl" placeholder="Что вы думаете?" id="review_text" name="text" rows="8" required></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <button name="submit" type="submit" value="Submit" class="site-button radius-xl outline white btn-block">Оставить отзыв!</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+
+<div class="modal fade bs-example-modal-lg" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">Что вы думаете о нашем салоне?</h4>
         </div>
-        <!-- /.modal-content -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name" class="control-label">Ваше имя:</label>
+              <input type="text" class="form-control" [(ngModel)]="newReview.name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="job" class="control-label">Ваша профессия:</label>
+                <input type="text" class="form-control" [(ngModel)]="newReview.job" name="job">
+              </div>
+            <div class="form-group">
+              <label for="text" class="control-label">Текст отзыва:</label>
+              <!-- <ngx-text-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="newReview.text" name="text"></ngx-text-editor> -->
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Закрыть</button>
+          <button type="button" (click)="addReview()" data-dismiss="modal" class="site-button">Отправить</button>
+        </div>
+      </div>
     </div>
-    <!-- /.modal-dialog -->
-</div>
+  </div>

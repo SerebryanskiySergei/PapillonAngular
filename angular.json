@@ -24,6 +24,7 @@
               "src/assets",
               "src/.htaccess",
               "src/sitemap.xml",
+              "src/robots.txt",
               {
                 "glob": "**/*",
                 "input": "src/assets/plugins/revolution/v5.4.3/assets",

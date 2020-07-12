@@ -24,6 +24,8 @@ import { ForHimComponent } from './for-him/for-him.component';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -54,7 +56,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     AppRoutingModule,
     NgxSpinnerModule,
     BrowserAnimationsModule,
-    CarouselModule 
+    CarouselModule,
+    ScrollToModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

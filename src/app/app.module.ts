@@ -29,6 +29,7 @@ import { StatsComponent } from './for-her/stats/stats.component';
 import { FormsModule }   from '@angular/forms';
 import { NgxTextEditorModule } from 'ngx-text-editor';
 import { HttpClientModule } from '@angular/common/http';
+import { PopoverModule } from 'ngx-bootstrap/popover';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { HttpClientModule } from '@angular/common/http';
     ScrollToModule.forRoot(),
     FormsModule,
     NgxTextEditorModule,
-    HttpClientModule
+    HttpClientModule,
+    PopoverModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

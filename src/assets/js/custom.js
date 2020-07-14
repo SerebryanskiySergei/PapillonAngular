@@ -611,40 +611,40 @@ var ButterFly = function(){
 	/* Function ============ */
 	return {
 		init:function(){
-			onePageLayout();
-			dzTheme();
-			handelResizeElement();
-			homeSearch();
-			MagnificPopup();
-			handelAccordian();
+			// onePageLayout();
+			// dzTheme();
+			// handelResizeElement();
+			// homeSearch();
+			// MagnificPopup();
+			// handelAccordian();
 			scrollTop();
-			handelPlaceholder();
+			// handelPlaceholder();
 			footerAlign();
-			fileInput();
+			// fileInput();
 			headerFix();
 			setDivHeight();
-			handelVideo();
+			// handelVideo();
 			handelFilterMasonary();
 			handelCountDown();
-			handelCustomScroll();
-			handelSideBarMenu();
-			cartButton();
-			handelBannerResize();
+			// handelCustomScroll();
+			// handelSideBarMenu();
+			// cartButton();
+			// handelBannerResize();
 			/* Home Particle Style */
-			handelParticle('beauty-care');
-			handelParticle('footer1');
+			// handelParticle('beauty-care');
+			// handelParticle('footer1');
 			wow_animation();
 		},
 		
 		load:function(){
 			masonryBox();
-			handelBootstrapSelect();
-			handelBootstrapTouchSpin();
-			handelBGElements();
+			// handelBootstrapSelect();
+			// handelBootstrapTouchSpin();
+			// handelBGElements();
 			equalHeight('.equal-wraper .equal-col');
 			equalHeight('.equal-wraper2 .equal-col');
 			equalHeight('.equal-wraper3 .equal-col');
-			counter();
+			// counter();
 		}
 	}
 	
@@ -667,7 +667,7 @@ jQuery(document).ready(function() {
 jQuery(window).load(function () {
 	'use strict'; 
 	ButterFly.load();
-	ButterFly.init();
+	// ButterFly.init();
 	setTimeout(function(){
 		jQuery('#loading-area').remove();
 	}, 0);

@@ -1,4 +1,4 @@
-# Allow all URLs (see http://www.robotstxt.org/robotstxt.html)
+# Allow all URLs
 User-agent: *
 Disallow:
-Sitemap: https://депиляция-воронеж.рф/sitemap.xml
+Sitemap: https://depvrn.ru/sitemap.xml

@@ -54,9 +54,9 @@ function dz_rev_slider_1(){
 				visible_area:"80%",
 				presize:false
 			},
-			responsiveLevels:[1240,1024,778,480],
-			visibilityLevels:[1240,1024,778,480],
-			gridwidth:[1240,1024,778,480],
+			responsiveLevels:[1600,1366,778,480],
+			visibilityLevels:[1600,1366,778,480],
+			gridwidth:[1600,1366,778,480],
 			gridheight:[950,700,600,500],
 			lazyType:"none",
 			parallax: {

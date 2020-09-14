@@ -327,14 +327,14 @@ var ButterFly = function(){
 		})
 
 		jQuery('.dzseth > div, .dzseth .img-cover, .dzseth .seth').each(function(e){
-			var maxHeight = Math.max.apply(Math,allHeights);
+			var maxHeight = Math.max.apply(Math, allHeights);
 			jQuery(this).css('height',maxHeight);
 		})
 		
 		allHeights = [];
 		/* Removice */
 		var screenWidth = $( window ).width();
-		if(screenWidth < 991)
+		if(screenWidth < 1200)
 		{
 			jQuery('.dzseth > div, .dzseth .img-cover, .dzseth .seth').each(function(e){
 				jQuery(this).css('height','');
@@ -650,7 +650,7 @@ var ButterFly = function(){
 	
 }();
 
-
+	
 /* Document.ready Start */	
 jQuery(document).ready(function() {
     'use strict';

@@ -30,6 +30,7 @@ import { FormsModule }   from '@angular/forms';
 import { NgxTextEditorModule } from 'ngx-text-editor';
 import { HttpClientModule } from '@angular/common/http';
 import { PopoverModule } from 'ngx-bootstrap/popover';
+import { ExtrainfoComponent } from './for-her/extrainfo/extrainfo.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { PopoverModule } from 'ngx-bootstrap/popover';
     TechnicsComponent,
     ForHerComponent,
     ForHimComponent,
-    StatsComponent
+    StatsComponent,
+    ExtrainfoComponent
   ],
   imports: [
     BrowserModule,

@@ -682,13 +682,20 @@ jQuery(document).ready(function() {
     function init(){
         // Создание карты.
         var myMap = new ymaps.Map("map", {
-            center: [51.65902194, 39.19683768],
+            center: [51.66579850, 39.19269662],
             zoom: 16
         });
-        myMap.balloon.open([51.65902194, 39.19683768], {
-            contentHeader: 'Papillon',
-            contentBody: 'ул.Свободы 14 (БЦ БИК), оф.811',
-            balloonPane: 'outerBalloon'
-        });
+		myMap.geoObjects
+		.add(new ymaps.Placemark([51.66522842, 39.19167344], {
+            balloonContent: 'Никитинская 42, 4 этаж, офис 404 (Салон красоты #1)',
+            iconCaption: 'Мы здесь!'
+        }, {
+            preset: 'islands#greenDotIconWithCaption'
+        }));
+        // myMap.balloon.open([51.66522842, 39.19167344], {
+        //     contentHeader: 'Салон Красоты #1',
+        //     contentBody: 'Никитинская, 42, 4 этаж, оф. 404',
+        //     balloonPane: 'outerBalloon'
+        // });
     }
 });
